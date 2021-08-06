@@ -1,9 +1,13 @@
 import React from 'react'
+import { Route } from 'react-router-dom'
+import Index from '../component/authentication/Index'
 
 function Router() {
     return (
         <div>
-            <h1>Hello</h1>
+            <Route exact path="/">
+                <Index />
+            </Route>
         </div>
     )
 }
