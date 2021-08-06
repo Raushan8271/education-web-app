@@ -20,19 +20,24 @@ code {
 
 .box {
   box-shadow: -4px 10px 35px -1px rgba(0, 0, 0, 0.75);
-  min-height: 20rem;
+  height: 25rem;
   margin: 30px;
   padding: 20px;
   border-radius: 5px;
   background-color: rgb(185, 132, 235);
+  
 }
 .box1 {
   box-shadow: -4px 10px 35px -1px rgba(0, 0, 0, 0.75);
-  min-height: 20rem;
+  height: 26rem;
   margin: 30px;
   padding: 10px;
   border-radius: 5px;
   background-color: rgb(185, 132, 235);
+  overflow-y: scroll;
+  /* position: fixed; */
+
+  
 }
 
 h1 {

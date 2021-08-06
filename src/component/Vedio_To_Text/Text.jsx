@@ -72,7 +72,7 @@ const Text = () => {
           </div>
         
         </div>
-        <div className='box'>
+        <div className='box1'>
           <p>{note}</p>
         </div>
         <div className='box1'>
