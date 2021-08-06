@@ -5,7 +5,6 @@ import './Text.css'
 const SpeechRecognition =
   window.SpeechRecognition || window.webkitSpeechRecognition
 const mic = new SpeechRecognition()
-console.log(mic)
 
 mic.continuous = true
 mic.interimResults = true
@@ -31,19 +30,19 @@ const Text = () => {
       mic.onend = () => {}
     }
     mic.onstart = () => {
-      console.log("you start caption")
+      console.log('you start caption')
     }
 
     mic.onresult = event => {
-      let Translation = Array.from(event.results)
+      let transcript = Array.from(event.results)
 
         .map(result => result[0])
-        .map(result => result.Translation)
+        .map(result => result.transcript)
         .join('')
-      //   console.log(Translation)
-          Translation= Translation.charAt(0).toUpperCase() + Translation.slice(1);
+      //   console.log(transcript)
+      transcript = transcript.charAt(0).toUpperCase() + transcript.slice(1)
 
-      setNote(Translation)
+      setNote(transcript)
       mic.onerror = event => {
         console.log(event.error)
       }
@@ -59,22 +58,22 @@ const Text = () => {
       <h1>Voice Notes</h1>
       <div className='container'>
         <div className='box'>
-          <h2>Current Note</h2>
-          {Listing ? <span>🎙️</span> : <span>🛑🎙️</span>}
+          <h2>Makes Notes</h2>
+          <div className="Caption">
+          {Listing ? <span>STOP Caption</span> : <span>START Caption</span>}
+          </div>
+          <div className="btn_div">
           <button onClick={handleSaveNote} disabled={!note}>
             Save Note
           </button>
           <button onClick={() => setListing(prevState => !prevState)}>
             Start/Stop
           </button>
-          <p>{note}</p>
+          </div>
+        
         </div>
         <div className='box'>
-          <h2>Notes</h2>
-          {savedNotes.map((n, index) => (
-            <li key={index}>{n}</li>
-          ))}
-        </div>
+          <p>{note}< */}
       </div>
     </>
   )
