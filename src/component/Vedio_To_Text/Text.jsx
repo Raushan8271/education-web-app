@@ -73,7 +73,14 @@ const Text = () => {
         
         </div>
         <div className='box'>
-          <p>{note}< */}
+          <p>{note}</p>
+        </div>
+        <div className='box1'>
+          <h2>Notes</h2>
+          {savedNotes.map((n, index) => (
+            <li key={index}>{n}</li>
+          ))}
+        </div>
       </div>
     </>
   )
