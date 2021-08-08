@@ -1,0 +1,17 @@
+.teacherSreen{
+    height: 100vh;
+    width: 100%;
+    background-color: aliceblue;
+}
+
+.teacherSreen video{
+    height: 100vh;
+    width: 100%;
+}
+
+.teacherSreen button{
+    position: absolute;
+    background-color: brown;
+    bottom: 0px;
+    left:50%;
+}
