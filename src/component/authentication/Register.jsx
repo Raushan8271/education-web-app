@@ -13,11 +13,13 @@ function Register() {
     const registerForm = async () => {
         if (fname.trim().length > 0 && email.trim().length > 0 && password.trim().length > 0) {
             try {
-                const data = await axios.post('http://localhost:2345/register', {
+                await axios.post('http://localhost:2345/register', {
                     fname: fname,
                     email: email,
                     password: password
                 })
+                alert("Registration Successful")
+
             } catch (e) {
                 alert("Something went wrong")
                 console.log(e)

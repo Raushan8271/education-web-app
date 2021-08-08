@@ -36,9 +36,8 @@ code {
   background-color: rgb(185, 132, 235);
   overflow-y: scroll;
   /* position: fixed; */
-}
-.box1::-webkit-scrollbar-thumb{
-  background-color:red;
+
+  
 }
 
 h1 {
