@@ -1,12 +1,11 @@
 import './App.css';
-import Text from './component/Vedio_To_Text/Text';
-import Router from './router/router';
-
+import Video from './component/VideoWindow/Video';
+import Router from './router/Router'
 function App() {
   return (
 <div className="App">
-      <Router />
-      {/* <Text /> */}
+      <Router/>
+      {/* <Video/> */}
     </div>
   );
 }
