@@ -5,6 +5,7 @@ import './Text.css'
 const SpeechRecognition =
   window.SpeechRecognition || window.webkitSpeechRecognition
 const mic = new SpeechRecognition()
+console.log(mic)
 
 mic.continuous = true
 mic.interimResults = true
