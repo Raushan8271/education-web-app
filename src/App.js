@@ -1,10 +1,11 @@
 import './App.css';
-import Router from './router/Router';
-
+import Video from './component/VideoWindow/Video';
+import Router from './Router/Router'
 function App() {
   return (
 <div className="App">
-      <Router />
+      <Router/>
+      {/* <Video/> */}
     </div>
   );
 }
